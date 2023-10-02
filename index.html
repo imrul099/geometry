@@ -61,14 +61,14 @@
             <h2 class="card-title">Parallelogram!</h2>
             <p>Area(A) = b X h</p>
             <p>
-              <input type="text" class="border ml-4 bg-gray-200 text-xl w-24 px-2" placeholder="base" name="" id="">
+              <input type="text" class="border ml-4 bg-gray-200 text-xl w-24 px-2" placeholder="width" name="" id="parallelogram-width">
               <span class="ml-3">cm</span>
-              <input type="text" class="border bg-gray-200 ml-4 text-xl w-24 px-2" placeholder="height" name="" id="">
+              <input type="text" class="border bg-gray-200 ml-4 text-xl w-24 px-2" placeholder="length" name="" id="parallelogram-length">
               <span class="ml-3">cm</span>
             </p>
-            <p>Area: <span></span></p>
+            <p>Area: <span id="parallelogram-area">0</span>cm<sup>2</sup></p>
             <div class="card-actions">
-              <button class="btn btn-primary w-full">CALCULATE</button>
+              <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">CALCULATE</button>
             </div>
           </div>
         </div>

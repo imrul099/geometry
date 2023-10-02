@@ -42,3 +42,33 @@ function calculateTrangularArea(){
      const triangleArea = document.getElementById('triangle-area');
      triangleArea.innerText = triangleMultiple;
 };
+
+
+// reusable function ---> reduce duplicate code
+function calculateParallelogramArea(){
+     const width = getInputValue('parallelogram-width');
+     // console.log(width);
+
+     const length = getInputValue('parallelogram-length');
+     // console.log(length);
+
+     const total = width * length;
+     // console.log(total);
+     setElementInnerText('parallelogram-area', total);
+     
+}
+
+function getInputValue(fieldId){
+     const inputField = document.getElementById(fieldId);
+     const inputFieldText = inputField.value;
+     const value = parseFloat(inputFieldText);
+     inputField.value = '';
+     return value;
+     
+};
+
+// reusable set span p div etc text
+function setElementInnerText(elementId, pararal){
+     const element = document.getElementById(elementId);
+     element.innerText = pararal;
+}
