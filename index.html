@@ -72,6 +72,42 @@
             </div>
           </div>
         </div>
+        <!-- rhombos card -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="/images/rhombus.png" alt="rhombos" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Rhombos!</h2>
+            <p>Area(A) = 0.5 X d<sub>1</sub> X d <sub>2</sub></p>
+            <p>
+              <input type="text" class="border ml-4 bg-gray-200 text-xl w-24 px-2" placeholder="width" name="" id="rhombos-width">
+              <span class="ml-3">cm</span>
+              <input type="text" class="border bg-gray-200 ml-4 text-xl w-24 px-2" placeholder="length" name="" id="rhombos-length">
+              <span class="ml-3">cm</span>
+            </p>
+            <p>Area: <span id="rhombos-area">0</span>cm<sup>2</sup></p>
+            <div class="card-actions">
+              <button class="btn btn-primary w-full">CALCULATE</button>
+            </div>
+          </div>
+        </div>
+        <!-- Ellipse Area -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="/images/ellipse.png" alt="ellipse" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Ellipse!</h2>
+            <p>Area(A) = π ab</p>
+            <p>
+              <input type="text" class="border ml-4 bg-gray-200 text-xl w-24 px-2" placeholder="large" name="" id="ellipse-first-radius">
+              <span class="ml-3">cm</span>
+              <input type="text" class="border bg-gray-200 ml-4 text-xl w-24 px-2" placeholder="short" name="" id="ellipse-second-radius">
+              <span class="ml-3">cm</span>
+            </p>
+            <p>Area: <span id="ellipse-area">0</span>cm<sup>2</sup></p>
+            <div class="card-actions">
+              <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">CALCULATE</button>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- area container -->
       <div class="w-[400px]">
